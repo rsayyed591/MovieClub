@@ -1,3 +1,7 @@
+Here’s an updated README with "Photos" and "Host" sections added, and a clean format:
+
+---
+
 # MovieClub
 
 ## Description
@@ -61,6 +65,17 @@ MovieClub is a React application that allows users to search for movies using th
 
 3. View the list of movies that match your search criteria.
 
+## Photos
+
+Here are some screenshots of the application:
+
+- ![Search Page](https://i.postimg.cc/xTRQ955t/Screenshot-2024-07-22-211553.png)
+- ![Movie List](https://i.postimg.cc/RV99ry7W/Screenshot-2024-07-22-213018.png)
+
+## Host
+
+The application is hosted on Netlify. You can view it [here](https://movieclub101.netlify.app/).
+
 ## Contributing
 
 If you want to contribute to this project, follow these steps:
@@ -81,7 +96,3 @@ For any questions or issues, please reach out to:
 
 - **Email:** rehansayyed591@gmail.com
 - **GitHub:** [Rehan Sayyed](https://github.com/rsayyed591)
-
----
-
-Feel free to modify this template according to your project's specifics and requirements. If you have any additional information you'd like to include, you can add sections accordingly!
