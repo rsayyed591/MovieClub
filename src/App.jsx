@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import MovieCard from './MovieCard';
+import Footer from './Footer';
 import './App.css';
 import SearchIcon from './assets/search.svg';
 import axios from 'axios';
@@ -64,6 +65,7 @@ function App() {
               </div>
             )}     
       </div>
+      <Footer />
     </>
   )
 }
