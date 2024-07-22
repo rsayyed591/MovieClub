@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import MovieCard from './MovieCard';
 import './App.css';
 import SearchIcon from './assets/search.svg';
+import axios from 'axios';
 
 const apikey = import.meta.env.VITE_MOVIES_API_KEY;
 
@@ -11,13 +12,12 @@ function App() {
   const [movies, setMovies] = useState([]);
   
   const[searchTerm, setSearchTerm] = useState('');
-  const searchMovies = async (title)=>{
-    const response = await fetch(`https://www.omdbapi.com?apikey=${apikey}&s=${title}`);
-    const data = await response.json();
 
-    setMovies(data.Search);
-  }
-
+  const searchMovies = async (title) => {
+    const response = await axios.get(`https://www.omdbapi.com?apikey=${apikey}`, { params: { s: title } });
+    setMovies(response.data.Search || []);
+  };
+  
   const handleKeyDown = (event) =>{
     if(event.key==='Enter')
       searchMovies(searchTerm)
