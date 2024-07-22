@@ -3,6 +3,7 @@ import MovieCard from './MovieCard';
 import './App.css';
 import SearchIcon from './assets/search.svg';
 
+console.log('API Key:', import.meta.env.VITE_MOVIES_API_KEY);
 // const API_URL = 'http://www.omdbapi.com?apikey=55b8c307'
 const API_URL = `http://www.omdbapi.com?apikey=${import.meta.env.VITE_MOVIES_API_KEY}`;
 
