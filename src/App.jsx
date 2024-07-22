@@ -5,7 +5,7 @@ import SearchIcon from './assets/search.svg';
 
 const apikey = import.meta.env.VITE_MOVIES_API_KEY;
 
-const API_URL = `https://www.omdbapi.com?apikey=${apikey}`;
+// const API_URL = `https://www.omdbapi.com?apikey=${apikey}`;
 
 function App() {
   const [movies, setMovies] = useState([]);
