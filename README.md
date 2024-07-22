@@ -1,7 +1,3 @@
-Here’s an updated README with "Photos" and "Host" sections added, and a clean format:
-
----
-
 # MovieClub
 
 ## Description
